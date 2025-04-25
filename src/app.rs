@@ -12,7 +12,6 @@ use yew::prelude::*;
 #[derive(PartialEq)]
 struct SearchQuery(String);
 
-#[async_trait(?Send)]
 impl Query for SearchQuery {
     type Input = usize;
     type Error = Infallible;
